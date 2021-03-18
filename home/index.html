@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+    <title>Ben Weyts is de weg kweyts</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: "Comic Sans MS";
+            text-align: center;
+        }
+        
+        header {
+            background: gray;
+            height: 100px;
+            box-shadow: 0px 2px 10px black;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+            position: relative;
+            float: left;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+        header #content {
+            height: inherit;
+            width: 100%;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        header #nav {
+            float: right;
+            height: inherit;
+        }
+
+        header #nav a {
+            color: rgb(80, 206, 248);
+            border: 1px solid rgb(80, 206, 248);
+            text-decoration: none;
+            padding: 10px;
+            font-size: 25px;
+            display: inline-block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            text-shadow: 2px 2px 2px black;
+            padding: 15px 25px;
+            margin: 0 10px;
+        }
+
+        header #nav a:hover {
+            color: gray;
+            background: rgb(80, 206, 248);
+        }
+
+        #banner {
+            background: rgb(185, 185, 185);
+            margin: 100px 0;
+        }
+
+        #banner img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 700px;
+        }
+
+
+        p {
+            font-size: 20px;
+        }
+
+        #section {
+            background: lightgray;
+            padding: 20px;
+        }
+
+        #picker {
+            background: gray;
+            padding: 10px;
+            transition: all 1s;
+        }
+
+        #picker button {
+            font-size: 20px;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #card {
+            background: white;
+            width: 250px;
+            margin: auto;
+        }
+
+        #card img {
+            width: 200px;
+        }
+
+        ul, ol {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="content">
+            <h1>Ben Weyts is de weg kweyts</h1>
+            <div id="nav">
+                <a href="https://www.instagram.com/elfie.desaedeleir/">Onlyfans</a>
+                <a href="https://itsbrian.github.io/p/monke-fall/">Leaked Images</a>
+            </div>
+        </div>
+    </header>
+    <div id="banner">
+        <img src="../banner.png" onmouseover="creepy(this, true)" onmouseleave="creepy(this, false)">
+    </div>
+    <h1 id="new">A new system:</h1>
+    <div id="section">
+        <h2>1) You choose what you learn</h2>
+        <p>No more predefined class schedules<br>You decide which subjects you want.<br><br>Test out our <b>Schedule Generator 9000</b> by clicking <a href="#" onclick="spawnPicker()">here</a></p>
+        <div id="picker" style="height:0px;overflow:hidden;padding:0px">
+            <h3>Choose your subjects:<br></h3>
+                <input type="checkbox" id="vehicle1" value="History">History ​ ​ ​ ​ ​<br>
+                <input type="checkbox" id="vehicle2" value="Electronics">Electronics<br>
+                <input type="checkbox" id="vehicle3" value="French">French ​ ​ ​ ​ ​<br>
+                <input type="checkbox" id="vehicle4" value="English">English ​ ​ ​ ​ ​<br>
+                <button onclick="genPack()">Generate package</button>
+                <div id="result" style="height:0px;overflow:hidden;padding:0px">
+                    <h1>You got the:</h1>
+                    <div id="card">
+                        <h1 id="packTitle">Loser package</h1>
+                        <img id="packImg" src="../loser.png">
+                        <p id="packDesc">lol you suck</p>
+                    </div>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br><br><br>
+    <div id="section">
+        <h2>2) New rules and guidelines</h2>
+        <p>The old rules are very outdated<br>here are the new ones:</p>
+        <ul>
+            <li>
+                <h4 style="margin:0">No more waking up early</h4>From now on school starts at 10am
+            </li>
+            <br><br>
+            <li>
+                <h4 style="margin:0">Exams are no more</h4>Evaluation based on tests throughout the year<br>If you fail your tests you will have to "pull een obi'tje" and retake the year
+            </li>
+            <br><br>
+            <li>
+                <h4 style="margin:0">Permission to eat in class</h4>If you get hungry or get bored during class you can eat whatever you want
+                <br><img src="../eten.gif" width="300px">
+                <br><b>Exceptions: You are NOT allowed to eat any of the following</b><br>
+                <ul>
+                    <li>Sushi</li>
+                    <li>Pussy</li>
+                    <li>Sigarettes (sorry Lander)<br><img width="250px" src="../lander.jpg"></li>
+                </ul>
+            </li>
+            <br><br>
+            <li>
+                <h4 style="margin:0">Wear what makes you comfortable</h4>
+                There are no longer any guideless for the clothing you wear.<br>
+                Everyone can wear what they wish to wear.
+                <br><img width="300px" src="../outfits.PNG">
+                <br><br>Our new system also strives for equality:<br>Everyone is allowed to <b>free the nipple (especially females)</b> 
+                <br><img width="300px" src="../nipple.PNG">
+            </li>
+        </ul>
+    </div>
+    <br><br><br>
+    <div id="section">
+        <h2>3) New subjects</h2>
+        <p>The current subjects are outdated<br>We came up with a few new ones:</p>
+        <ol>
+            <li><b>Family bonding</b><br>Teaches you to help your family<br>For example: when your stepsister gets stuck you can help her out<br><img src="../stuck.PNG"></li>
+            <br><br>
+            <li>
+                <b>How to deal with incompetent teachers</b>
+                <br>
+                <img width="350px" src="../gun.gif">
+            </li>
+            <br><br>
+            <li>
+                <b>Cooking classes (taught by Thorben's mom)</b><br>
+                <img width="300px" src="../hotdog.PNG"> <img src="../cookie.jpg">
+            </li>
+        </ol>
+    </div>
+    <h2>If Ben Weyt's is interested in using our new system as the official system<br>he can contact us here:</h2>
+    <h4>spetterpoepje024@6EE.cum</h4><br><br><br><br>
+    <script>
+        function creepy(x, t){
+            if (t == true)
+                x.src = "../banner2.png"
+            else 
+                x.src = "../banner.png"
+        }
+
+        function spawnPicker(){
+            document.querySelector("#picker").style = "";
+        }
+
+        function genPack(){
+            if (document.querySelector("#vehicle1").checked == true || document.querySelector("#vehicle3").checked == true){
+                document.querySelector("#packTitle").innerText = "Loser Package"
+                document.querySelector("#packImg").src = "../loser.png"
+                document.querySelector("#packDesc").innerText = "you suck lol"
+            } else {
+                document.querySelector("#packTitle").innerText = "Swag Package"
+                document.querySelector("#packImg").src = "../swag.png"
+                document.querySelector("#packDesc").innerText = "you are swag !"
+            }
+            document.querySelector("#result").style = "";
+        }
+    </script>
+</body>
+</html>
